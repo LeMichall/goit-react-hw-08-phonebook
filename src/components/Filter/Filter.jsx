@@ -1,12 +1,12 @@
 import React from 'react';
 import css from './Filter.module.css';
 import { useDispatch } from 'react-redux';
-import { filterContact } from '../../Redux/actions';
+import { setStatusFilter } from 'Redux/filterSlice';
 
 export const Filter = () => {
   const dispatch = useDispatch();
   const handleChangeFilter = e =>
-    dispatch(filterContact(e.target.value.toLowerCase()));
+    dispatch(setStatusFilter(e.target.value.toLowerCase()));
 
   return (
     <div className={css.filterWrapper}>
