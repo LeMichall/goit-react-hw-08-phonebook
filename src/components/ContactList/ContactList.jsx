@@ -1,6 +1,7 @@
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import css from './ContactList.module.css';
-import { deleteContacts } from 'Redux/actions';
+import { deleteContacts, fetchContacts } from 'Redux/actions';
 
 export const ContactList = () => {
   const dispatch = useDispatch();
@@ -13,6 +14,9 @@ export const ContactList = () => {
   const filteredContacts = contacts.filter(contact =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   return (
     <div className={css.contactListWrapper}>
