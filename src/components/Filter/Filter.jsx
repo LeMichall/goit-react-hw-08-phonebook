@@ -16,6 +16,7 @@ export const Filter = () => {
         type="text"
         name="name"
         className={css.filterInput}
+        autocomplete='off'
         placeholder="search contacts..."
         onChange={handleChangeFilter}
       />
