@@ -20,7 +20,7 @@ export const ContactList = () => {
 
   return (
     <div className={css.contactListWrapper}>
-      <ul>
+      <ul className={css.contactList}>
         {filteredContacts.map(contact => (
           <li key={contact.id} className={css.contactListItem}>
             {contact.name}: {contact.number}

@@ -3,21 +3,46 @@
   border: 1px solid black;
   border-radius: 4px;
   padding: 15px;
-  margin-left: 20px;
-}
-.contactForm {
+  margin: 40px auto;
   display: flex;
   flex-direction: column;
-
-  width: 150px;
+}
+.contactFormTitle{
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.contactForm {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%
 }
 .contactLabel {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.contactSbmtBtn {
-  margin-top: 10px;
-  width: 80px;
+.contactFormInput{
+  border-radius: 4px
+}
+.contactFormButton{
+  background-color: #ff5733; 
+  color: #fff; 
+  border: none;
+  padding: 8px 16px; 
   cursor: pointer;
+  background-color: #c1c7d3;
+  border-radius: 20px;
+  color: #000000;
+  font-size: 16px;
+  margin-top: 10px;
+&:hover {
+  background-color: #ec8d35;
+  border-color: #ec8d35;
+  box-shadow: 0px 15px 20px rgba(51, 50, 56, 0.4);
+  color: #fff;
+  transition: all 0.3s ease 0s;
+}
 }

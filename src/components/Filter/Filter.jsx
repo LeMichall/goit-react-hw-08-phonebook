@@ -10,10 +10,12 @@ export const Filter = () => {
 
   return (
     <div className={css.filterWrapper}>
-      <p>Find contacts by name :</p>
+      <h2 className={css.filterTitle}>Your contacts</h2>
+      <p className={css.filterSubTitle}>Find contacts by name :</p>
       <input
         type="text"
         name="name"
+        className={css.filterInput}
         placeholder="search contacts..."
         onChange={handleChangeFilter}
       />
